@@ -13,11 +13,14 @@
  import { Gray } from './themes/Gray'
  import Header from "./header"
  import "./layout.css"
+
  
  const Content = styled.div`
-   margin: 0 auto;
-   max-width: var(--size-content);
-   padding: var(--size-gutter);
+  background-color: #191919;
+  margin: 0 auto;
+  max-width: var(--size-content);
+  padding: var(--size-gutter);
+   
  `
  
  const Layout = ({ children }) => {
@@ -33,6 +36,12 @@
  
    return (
      <ThemeProvider theme={Gray}>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+      </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap');
+      </style>
        <Header siteTitle={data.site.siteMetadata.title || `Title`} />
        <Content>
          <main>{children}</main>

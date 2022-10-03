@@ -26,9 +26,12 @@ text-decoration: none;
 const Header = ({ siteTitle }) => (
 <Outer>
 <H1>
-<StyledLink to="/">{siteTitle}</StyledLink>
+<StyledLink to="/">{siteTitle}
+{/* <img src="/images/Giannis.png" alt= " "></img> */}
+</StyledLink>
 </H1>
 </Outer>
+
 )
 
 Header.propTypes = {

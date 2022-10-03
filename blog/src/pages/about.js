@@ -15,7 +15,7 @@ const About = ({ data }) => {
         <p>{`At ${company} we have all nature of blogs.`}</p>
         <div style={{ maxWidth: `300px` , marginBottom: `1.45rem` }}>
         <StaticImage
-            src="../images/Kobe.png"
+            src="../images/Giannis.png"
             width = {300}
             quality={95}
             formats={["auto","webp", "avif"]}
